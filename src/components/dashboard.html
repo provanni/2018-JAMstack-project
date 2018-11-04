@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <link type="text/css" rel="stylesheet" href="../components/dashboard.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1 id="app-name">Emote Journal</h1>
+
+    <nav>
+      <a href="#">How are you feeling?</a> |
+      <a href="#">Sign out</a>
+    </nav>
+
+  </header>
+  <!-- There will be a navigation right here -->
+
+  <h1>Your Dashboard</h1>
+
+  <h2 style="text-align: center">This is how you've been feeling for the past week.</h2>
+
+  <div class="graph-container row">
+    <div class="graph-item" id="donutDiv"><!-- Plotly donut graph placed here --> </div>
+    <div class="graph-item" id="lineDiv"><!-- Plotly line graph placed here --></div>
+  </div>
+
+  <div class="graph-container row">
+    <div class="graph-item" id="findHelp">
+      <div class="item">
+        <!-- This will change depending on data -->
+        <h2>We've noticed you've been pretty sad lately. Here's some resources that might help:</h2>
+        <div class="ul-div">
+        <ul>
+          <li>Stay in Touch</li>
+          <ul>
+            <li>fhibsbj</li>
+          </ul><br>
+
+          <li>fhibsbj</li>
+          <ul>
+            <li>fhibsbj</li>
+          </ul><br>
+
+          <li>fhibsbj</li>
+          <ul>
+            <li>fhibsbj</li>
+          </ul><br>
+
+        </ul>
+        </div>
+        <div class="ul-div">
+          <ul>
+            <li>Stay in Touch</li>
+            <ul>
+              <li>fhibsbj</li>
+            </ul><br>
+
+            <li>fhibsbj</li>
+            <ul>
+              <li>fhibsbj</li>
+            </ul><br>
+
+            <li>fhibsbj</li>
+            <ul>
+              <li>fhibsbj</li>
+            </ul><br>
+
+          </ul>
+        </div>
+      </div>
+
+
+
+
+    </div>
+    <div class="graph-item" id="mostOften">    </div>
+ </div>
+
+
+<!-- Plotly.js -->
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+<!-- Numeric JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/numeric/1.2.6/numeric.min.js"></script>
+
+<!-- ZingChart JS library -->
+  <script src= "https://cdn.zingchart.com/zingchart.min.js"></script>
+  <script> zingchart.MODULESDIR = "https://cdn.zingchart.com/modules/";
+  		ZC.LICENSE = ["569d52cefae586f634c54f86dc99e6a9","ee6b7db5b51705a13dc2339db3edaf6d"];
+  </script>
+
+<!-- Import graph -->
+  <script type="text/javascript" src="../components/plotly.js"></script>
+
+</body>
+</html>
