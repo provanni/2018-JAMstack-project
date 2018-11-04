@@ -62,6 +62,15 @@ class EmotionsList extends Component {
     this.setState({
       open: false,
     })
+    const create = (data) => {
+      return fetch('/.netlify/functions/emotions-create', {
+        body: JSON.stringify(data),
+        method: 'POST'
+      }).then(response => {
+        return response.json()
+      })
+    }
+    
   }
 
   render() {
